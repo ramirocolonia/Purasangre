@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+
+@font-face {
+    font-family: piston;
+    src: url(../fonts/Piston\ Pressure.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --rojoPrimario: #d7041b;
+    --oscuroFooter: #242424;
+    --grisClaro: #d5d5d6;
+    --grisBGMain: #646464;
+}
+
+/* GENERALES */
+html {
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    color: var(--grisClaro);
+    font-family: "piston";
+    font-size: 90px;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 5px var(--rojoPrimario);
+}
+
+@media only screen and (max-width: 480px) {
+    h1{
+        font-size: 45px;
+    }
+}
+
+h2 {
+    font-family: "piston";
+    font-size: 50px;
+}
+
+h3 {
+    font-family: "piston";
+    font-size: 30px;
+}
+
+h4 {
+    font-family: "piston";
+    font-size: 25px;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to top, var(--oscuroFooter) 0%, var(--rojoPrimario) 100%);
+}
+
+.iconoHeader {
+    width: 150px;
+    height: 120px;
+}
+
+.iconoHeader:hover {
+    transform: scale(1.09);
+    transition: all 0.5s;
+    filter: drop-shadow(3px 3px 10px var(--grisClaro));
+}
+
+.menuNav {
+    background-color: var(--oscuroFooter);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+
+@media only screen and (max-width: 480px) {
+    .menuNav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+.menuNav a {
+    display: block;
+    font-family: "piston";
+    text-decoration: none;
+    color: var(--grisClaro);
+    font-size: 30px;
+    text-shadow: 1px 1px 10px var(--rojoPrimario);
+    padding: 10px;
+}
+
+.menuNav a:hover {
+    color: var(--rojoPrimario);
+    text-shadow: 1px 1px 10px var(--grisClaro);
+    transition: all 0.5s;
+}
+
+main {
+    width: 100%;
+    background-color: var(--grisBGMain);
+    text-align: center;
+}
+
+footer {
+    background-color: var(--rojoPrimario);
+    color: var(--grisClaro);
+    text-align: center;
+    padding: 10px;
+}
+
+.contenedorFooter {
+    color: var(--grisClaro);
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--grisClaro);
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.derechos{
+    font-size: 12px;
+}
+
+.principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+/* INDEX */
+.imgIndex {
+    padding: 30px 10px;
+    background-color: #000;
+    background-image: url(../img/saludo2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+
+@media only screen and (max-width: 480px) {
+    .imgIndex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.contenidoIndex {
+    padding: 15px 15px 25px 15px;
+    margin: 20px;
+    background-color: rgb(0 0 0 / 80%);
+    color: var(--grisClaro);
+    width: 60%;
+    height: auto;
+    border: 5px solid var(--rojoPrimario);
+    float: right;
+    font-family: 'Oswald', sans-serif;
+}
+
+@media only screen and (max-width: 480px) {
+    .contenidoIndex{
+        width: 90%;
+    }
+}
+
+.contenidoIndex h2 {
+    /* font-family: "piston";
+    font-size: 50px; */
+    letter-spacing: 1px;
+    color: var(--grisClaro);
+    text-shadow: 2px 2px 5px var(--rojoPrimario);
+    text-transform: initial;
+    font-style: italic;
+}
+
+.contenidoIndex p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contenidoIndex a {
+    color: var(--grisClaro);
+    background-color: var(--rojoPrimario);
+    text-shadow: 2px 2px 5px var(--oscuroFooter);
+    border: 2px solid var(--grisClaro);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 10px;
+}
+
+.contenidoIndex a:hover {
+    background-color: var(--oscuroFooter);
+    /* color: var(--rojoPrimario); */
+    text-shadow: 0px 0px 5px var(--rojoPrimario);
+}
+
+.titulo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoBlanco {
+    width: 120px;
+    height: 68px;
+    /* -webkit-filter: drop-shadow(3px 3px 5px var(--rojoPrimario)); */
+    filter: drop-shadow(3px 3px 5px var(--rojoPrimario));
+}
+
+@media only screen and (max-width: 480px) {
+    .logoBlanco{
+        width: 60px;
+        height: 34px;
+    }
+}
+
+.contenedorMainIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+    .contenedorMainIndex{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.mainItemIndex {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--grisClaro);
+    background-color: var(--oscuroFooter);
+    /* border: 1px solid var(--rojoPrimario); */
+    box-shadow: 0px 0px 20px var(--rojoPrimario);
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    padding: 0px 5px 5px 5px;
+}
+
+@media only screen and (max-width: 480px) {
+    .mainItemIndex{
+        margin: 10px 0px;
+    }
+}
+
+.mainItemIndex a {
+    color: var(--grisClaro);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* QUE HACEMOS? */
+.imgQue {
+    background-image: url(../img/puraBox.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tituloPag {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .8);
+    margin-top: 1rem;
+    padding: 2rem;
+    color: white;
+    font-size: 5rem;
+    font-family: "piston";
+}
+
+.itemsQue {
+    width: 75%;
+}
+
+.itemQue {
+    display: block;
+    /* width: 100%; */
+    text-align: center;
+    background-color: rgba(0, 0, 0, .8);
+    margin-top: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    font-family: "piston";
+}
+
+/* HORARIOS */
+.imgHorarios {
+    background-image: url(../img/afuera.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* PLANES */
+.imgPlanes {
+    background-image: url(../img/horarios.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
